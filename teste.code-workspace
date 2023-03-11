@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../Documents/teste"
+		},
+		{
+			"name": "ESP32_128X64_ST7920",
+			"path": "../../Documents/ESP32_128X64_ST7920"
+		}
+	],
+	"settings": {}
+}

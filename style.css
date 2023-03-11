@@ -1,0 +1,152 @@
+/* tipo de fontes */
+/*@import url('https://fonts.googleapis.com/css2?family= Shantell +Sans:wght@600 & display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');*/
+
+
+ :root{  /* aqui e uma variavel global para as cores */
+    --cor-primaria:   #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria:  #22d4fd;
+    --cor-houver:     #272727;
+
+    --fonte-principal: 'Shantell Sans', cursiva;
+}
+
+
+/*Você aprendeu sobre a importância de resetar o CSS antes de estilizar qualquer elemento de uma página, pois essa parte do código limpa todos os padrões dos navegadores. Diante disso, analise o 
+erro do código abaixo e marque a alternativa que indique a sintaxe correta do reset.*/
+
+*{   /*tem que ter erte * para funcionar o texto acima explica melhor pois essa parte do código limpa todos os padrões dos navegadores.   */
+     margin: 0;   /* para inicio da pagina */
+    padding: 0;   /* para inicio da pagina */
+}
+
+body  {
+       /*  height: 100vh;             e para garanti que vai ficar 100% da pagina */
+         box-sizing: border-box;    /*para garatir que nao vai sair do comprimento que foi defenito */
+         /* width: 100%;
+padding: 5px;*/
+         background-color: var(--cor-primaria) ; /*cor de fundo da pagina  / var(--cor-primaria)  apara chamar a função global */ 
+         color: var(--cor-secundaria);  /*var(--cor-primaria)  apara chamar a função global */ 
+}
+
+.chamar-cor{      /* funçao da class*/
+    color: var(--cor-terciaria); /* a cor do item da class*/
+}
+
+.apresentacao{      /*função do main*/
+ /*   margin: 10%  10%;  /*a margem que vai esta envolta da  formatando o posicionamento  da pagina  / o primeiro valor e vertical e segundo valor e horizontal 
+ */ 
+    padding: 12% 15%;           /*defini o tanamnho da pagina */
+    display: flex;       /* para posicionar elementos na tela  */
+    align-items: center;  /* tarzer o conteudo para o centro da imagem   */
+    justify-content: space-between;  /* para criar um espaço entre os elementos */
+    gap: 82px;
+}
+
+/*para define o tamanho da caixa que vai fivar com as letras dentros */
+.apresentacao_conteudo{ /*função do conteundo*/
+     width: 50%;  /*a largura */
+     display: flex;    /*chamar a funlão para posicionar elementos na tela */
+     flex-direction: column;   /*que o espaçamento das letras serao em formato colunas*/
+     gap: 50px;               /*os espacamentos das letras */
+}
+
+.tamanho_da_fonte_titulo{  /*o tamanho da fonte do titulo */
+   font-size: 2.25rem;    /*ajusta a tela do googlo */
+   font-family: var(--fonte-principal); /*para chamar o tipo de  fonte que pesquiso nop google cvom o link acima  */
+}
+
+.tamanho_da_fonte_paragrafro{  /* tamnaho da fonte do paragrafo */
+    font-size: 5rem;
+}
+
+.espacp_botao{  /*aqui e o espaço dos botao com a dimensao */
+   display: flex;   /*cahmar a função para posicionar elementos na tela */
+   flex-direction: column;  /* colocar um botao de baixo do outro no formato coluna */
+   justify-content: space-between;   /*separar ele */
+   align-items: center;              /* cetralizado o botao na vertical */
+   gap: 32px;                /*espaçpo entre um botao e outro*/
+}
+
+.formato_do_botaos{                   /* o formatados dos botaos / todos vao esta com o mesmo formato pq e a mesma função */
+    /* background-color: #22d4fd; */    /* valor de dentro do botao */
+    display: flex;                 /*cahmar a função para posicionar elementos na tela */
+    justify-content: center;         /* cetralizado o botao  */
+    gap: 1px;                      /*tamanho das teltras */
+    border: 5px solid var(--cor-terciaria);       /* valor da borda do botao */
+    width: 50%;                     /*largura do botao */
+    text-align: center;               /*para centralizar o texto*/
+    border-radius: 16px;              /*arrendodar a porta do bortao */
+    font-size: 1.5rem;                  /* Tamanho da fonte da letra que esta no botao */
+    font-weight: 900;                 /* formato da fonrte */
+    padding: 21.5px 0;                /* valor da possição das letras dentro do botao o primeiro valor e o vertical e o segundo horizontal */
+    text-decoration: none;
+    color: var(--cor-secundaria);
+   
+    font-family: var(--fonte-principal); /*para chamar o tipo de  fonte que pesquiso nop google cvom o link acima */ 
+}
+
+.formato_do_botaos:hover{             /*quando passar o mouse em cima do botao fazer alguma coisa */
+     background-color: var(--cor-houver);    /*quando passar o muse em cima do botao vai ficar com esta cor seleciona aqiui */
+}
+
+.subtitulo{
+    font-family: var(--fonte-principal); /*para chamar o tipo de  fonte que pesquiso nop google cvom o link acima  */
+    font-weight: 400px;     /* formato da fonte */
+      font-size:  4.3rem;                  /* Tamanho da fonte da letra que esta no botao */
+}
+
+.apresentacao_imagem{  /*para quando diminu a tela a imagem diminui junto*/
+    width: 50%;   /*para quando % a imagem tem que diminuir quando muda a tela google para o celular */
+}
+
+.rodape{                               /*funçaõ do rodape*/
+     padding: 24px;                   /* o tamanho da linha azul do rodape */
+     color: var(--cor-primaria);                  /*cor da letra do rodape */
+     background-color: var(--cor-terciaria);   /*cor a tra do rodaope*/
+     text-align: center;            /*para centralizar a lerta do rodape */
+     font-family: var(--fonte-principal);   /* o formado da fonte do rodape */
+     font-size: 1.5rem;                         /*o tamanho da fonte do rodape */
+     font-weight: 400;                       /*peso da fornte */
+}
+
+
+.cabecalho{
+    padding: 2%  0%  0%  15%;  /* e os 4 cados da imagem */
+}
+
+.cabelho_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabelho_menu_link{
+      font-family: var(--fonte-principal) ;   /* o formado da fonte do menu */
+      font-size: 1.5rem;       /*o tamanho da fonte do menu */
+      font-weight: 600;    /*peso da fornte  */
+      color: var(--cor-terciaria);    /*cor da letra do menu */
+      text-decoration: none; /*tira a linha de baixo da palavra / se quiser a linha e so tirar esta linha de codigo*/
+}
+
+
+/*quando for abrir no celular*/
+@media (max-width: 1200px ){  /*e paresido com if se a codisao que esta dentro do paretes for verdadeira ele execulta o que esta dentro das chaves*/
+     .cabecalho{
+            padding: 10%;    /*tamanho da letra no celular do cabecalho*/        
+    }
+
+    .cabelho_menu{
+        justify-content: center;  /*para centralizar quando a tela for menor */
+    }
+
+     .apresentacao{
+        flex-direction: column-reverse;  /*inverter as possiçoes o que estiver em baixo vai para cima e de cima pra baixo */
+        padding: 5%;
+     }
+
+     .apresentacao_conteudo{
+        width: auto;
+     }
+}  /*@media*/
